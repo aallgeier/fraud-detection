@@ -9,23 +9,24 @@ IEEE-CIS Fraud Detection: https://www.kaggle.com/c/ieee-fraud-detection/discussi
 # Some highlights
 ## 1. Data Preprocessing (numerical data)
 ### Dropping data
--Remove features not apprpriate for in our process such as Transaction ID and TransactionDT (delta time)
+-Remove features not apprpriate for in our process such as Transaction ID and TransactionDT (delta time)<br>
 -Remove columns with more than a threashold-percent of NaNs 
--Fill NaN in columns with column means
+-Fill NaN in columns with column means<br>
 
 ### Dimensionality reduction 
--After min-max normalization, remove features with variance lower than threshold since features essentially constant do not help the fitting.
--Remove features with high correlation to other features since it can be redundant information when fitting
--Perform PCA and standardize data beforehand (if a feature shows high variance, this may dominate the principal components).
+-After min-max normalization, remove features with variance lower than threshold since features essentially constant do not help the fitting.<br>
+-Remove features with high correlation to other features since it can be redundant information when fitting<br>
+-Perform PCA and standardize data beforehand (if a feature shows high variance, this may dominate the principal components).<br>
 
 ### PCA 
--Standardize data (mean 0 variance 1)
--Perform PCA with scikit-learn
+-Standardize data (mean 0 variance 1)<br>
+-Perform PCA with scikit-learn<br>
 
 ## 2. Resampling of training data with SMOTE (numerical data)
-The givien data is skewed towards transactions which are not fradulent, we will use SMOTE to sinthesize more fradulent transation data points to have a 1:1 ratio of the classes. 
+The givien data is skewed towards transactions which are not fradulent, we will use SMOTE to sinthesize more fradulent transation data points to have a 1:1 ratio of the classes. <br>
 
 ## 3. kNN, NBayes, Linear Regression
+Code provided
 
 ## 4. SVM, Neural Networks (FFN, CNN), Random Forest, XG Boost
 
