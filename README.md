@@ -8,17 +8,17 @@ IEEE-CIS Fraud Detection: https://www.kaggle.com/c/ieee-fraud-detection/discussi
 
 # Some highlights
 ## 1. Data Preprocessing (numerical data)
-### 1.1. Dropping data
+### Dropping data
 -Remove features not apprpriate for in our process such as Transaction ID and TransactionDT (delta time)
 -Remove columns with more than a threashold-percent of NaNs 
 -Fill NaN in columns with column means
 
-### 1.2. Dimensionality reduction 
+### Dimensionality reduction 
 -After min-max normalization, remove features with variance lower than threshold since features essentially constant do not help the fitting.
 -Remove features with high correlation to other features since it can be redundant information when fitting
 -Perform PCA and standardize data beforehand (if a feature shows high variance, this may dominate the principal components).
 
-### 1.2.1. PCA 
+### PCA 
 -Standardize data (mean 0 variance 1)
 -Perform PCA with scikit-learn
 
