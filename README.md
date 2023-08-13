@@ -11,7 +11,7 @@ The problem of credit card fraud detection gives us a unique opportunity to anal
 ## Dataset
 IEEE-CIS Fraud Detection: https://www.kaggle.com/c/ieee-fraud-detection/discussion/101203
 
-## 1. Data Preprocessing for numerical data
+## 1. Preprocessing
 ### Dropping data
 -Remove features not apprpriate for in our process such as Transaction ID and TransactionDT (delta time)<br>
 -Remove columns with more than a threashold-percent of NaNs 
@@ -26,7 +26,7 @@ IEEE-CIS Fraud Detection: https://www.kaggle.com/c/ieee-fraud-detection/discussi
 -Standardize data (mean 0 variance 1)<br>
 -Perform PCA with scikit-learn<br>
 
-## 2. Resampling of training data with SMOTE for numerical data
+## 2. Resampling with SMOTE
 The givien data is skewed towards transactions which are not fradulent, we will use SMOTE to sinthesize more fradulent transation data points to have a 1:1 ratio of the classes. <br>
 
 ## 3. Supervised learning 
